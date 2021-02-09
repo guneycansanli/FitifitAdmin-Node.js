@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Firebase CRUD Operation</title>
+  <title>Admin Panel</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -453,11 +453,19 @@
   </div>
 </div>
 
+<script src="crud.js"></script>
 
+<script>
+  firebase.auth().onAuthStateChanged(function(user)
+            {
+                if(!user)
+                {
+                    window.location.href = "login.html";
+                }
+            });
+
+</script>
 
 
 </body>
-
-
-<script src="crud.js"></script>
 </html>

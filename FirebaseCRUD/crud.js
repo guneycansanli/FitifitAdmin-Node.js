@@ -1,5 +1,5 @@
-
-var firebaseConfig = {
+$(document).ready(function(){
+    var firebaseConfig = {
     apiKey: "AIzaSyB5ZY45YF5RzZ-eP_GgA-Eswyule7frVFg",
     authDomain: "fitifitapp.firebaseapp.com",
     databaseURL: "https://fitifitapp-default-rtdb.firebaseio.com",
@@ -200,3 +200,5 @@ $(document).on('click', '.dltAllData', function () {
 
     
 });
+
+})

@@ -2,40 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Guneycansali | Firebase Admin</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
 <body>
 
-<div class="container">
-    <h3 class="text-center">login</h3>
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3 well">
-
-                <div class="form-group">
-                    <label>E-Mail</label>
-                    <input type="email" class="form-control" id="email" placeholder="E-posta">
-                </div>
-                <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
-                </div>
-                <button id="loginBtn" class="btn btn-primary btn-block">Giriş Yap</button>
-                <hr>
-                <p class="text-center">
-                    If you are not a Admin <a href="register.html">Register</a>
-                </p>
-
+    <main>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6 login-section-wrapper">
+              <div class="row">
+                <img src="assets/images/fitifitIcon.png" alt="logo" class="logo" style="max-width: 350px;">
+              </div>
+              <div class="login-wrapper">
+                <h1 class="login-title">GİRİŞ</h1>
+                <form action="#!">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="email@example.com">
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="password">Şifrem</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Şifrenizi Giriniz">
+                  </div>
+                  <button id="loginBtn" class="btn btn-block login-btn" type="button" style="background-color: yellowgreen;">GİRİŞ</button>
+                </form>
+                <a href="#!" class="forgot-password-link">Şifremi Unuttum</a>
+                <p class="login-wrapper-footer-text">Hesabınız Yokmu? <a href="register.html" class="text-reset"><b> Kayıt Olun</b></a></p>
+              </div>
+            </div>
+            <div class="col-sm-6 px-0 d-none d-sm-block">
+              <img src="assets/images/backGraoundLogin.jpg" alt="login image" class="login-img">
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+      </main>
 
-<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
-<script  src="/login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script  src="login.js"></script>
 
 
 </body>
